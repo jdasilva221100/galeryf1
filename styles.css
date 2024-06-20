@@ -1,0 +1,57 @@
+/* Estilos de body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Para mantener todo el contenido en una única columna */
+    flex-direction: column;
+    min-height: 100vh; /* Para que el contenido ocupe la altura total de la página */
+}
+
+/* Estilos de header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border-bottom: 4px solid #555; /* Añade un borde a la parte inferior del header */
+}
+
+/* Estilos del main */
+main {
+    flex: 1; /* Para ocupar el espacio disponible */
+    display: flex;
+    justify-content: center; /* Para centrar horizontalmente */
+    padding: 20px;
+}
+
+/* Estilos de galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Para centrar horizontalmente */
+    gap: 30px; /* Añade separación entre las fotos */
+    padding: 10px; /* Añade un pequeño relleno a la galería */
+}
+
+/* Estilos de los elementos de la galería */
+.gallery-item {
+    flex: 1 0 200px; /* Ajusta el tamaño y la distribución */
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    padding: 5px; /* Añade un relleno interior para las fotos */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
